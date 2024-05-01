@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-image: url(imgs/banner.png);
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.hero{
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.hero h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: #039066;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h2 i{
+    font-size: 80px;
+}
+.hero form{
+    width: 100%;
+}
+.input-box{
+    margin: 25px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    padding: 20px 55px 20px 20px;
+    font-size: 20px;
+    color: #039066;
+    border: 2px solid #039066;
+    outline-color: #039066;
+    border-radius: 8px;
+    position: relative;
+}
+.sign-link a{
+    font-size: 20px;
+    cursor: pointer;
+}
+.sign-link a:hover{
+    text-decoration: underline;
+}
+button{
+    margin: 30px auto;
+    text-align: center;
+    width: 200px;
+    padding: 15px 0;
+    background: #039066;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+button:hover{
+    background: #ddd;
+    color: #000;
+}
+
+#showPass{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    color: #039066;
+    cursor: pointer;
+}
+
+
+

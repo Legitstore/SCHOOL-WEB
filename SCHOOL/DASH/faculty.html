@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- ---------- FONTAWESOME CDN LINK ----------  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- ---------- BOCION CDN LINK ----------  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ---------- COSTOM LINK ----------  -->
+    <link rel="stylesheet" href="dash.css">
+
+</head>
+<body>
+    <!-- ---------- MAIN ----------  -->
+    <aside>
+        <div class="sidebar">
+            <div class="navLinks">
+                <div class="side_logo">
+                    <i class="fa fa-globe"></i> 
+                    <h2>NIIT</h2>
+                </div>
+    
+                <div class="side_body">
+                    <img src="imgs/avatar2.png" alt="">
+                    <h4>Admin John</h4>
+                </div>
+    
+                <ul class="menu-list">
+                    <li >
+                        <a href="dash.html">
+                            <i class="fa fa-th-large" id="icon"></i>
+                            <span id="text">Dashboard</span>
+                            <i class="fa fa-plus" id="plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="faculty.html" class="active">
+                            <i class="fa fa-user-tie" id="icon"></i>
+                            <span id="text">Facultis</span>
+                            <i class="fa fa-plus" id="plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="student.html">
+                            <i class="fa fa-user-group" id="icon"></i>
+                            <span id="text">Students</span>
+                            <i class="fa fa-plus" id="plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-user" id="icon"></i>
+                            <span id="text">Staffs</span>
+                            <i class="fa fa-plus" id="plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user-graduate" id="icon"></i>
+                            <span id="text">Courses</span>
+                            <i class="fa fa-plus" id="plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-calendar" id="icon"></i>
+                            <span id="text">Calendar</span>
+                            <i class="fa fa-plus" id="plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-building" id="icon"></i>
+                            <span id="text">Department</span>
+                            <i class="fa fa-plus" id="plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-sign-out" id="icon"></i>
+                            <span id="text">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- ---------- MAIN RIGHT SIDE BAR----------  -->
+        <div class="rightbar">
+            <div class="header">
+                <i class="fa fa-bars menubar"></i>
+                <i class="fa fa-align-center menu_bar" onclick="showMenu()"></i>
+                
+                <div class="school">
+                    <h2 id="niit_show"><i class="fa fa-dashboard" ></i> NATIONAL INSTITUTE OF INFORMATION & TECHNOLOGY ADMIN DASHBOARD</h2>
+                    <h2 id="niit_hide"><i class="fa fa-dashboard" ></i> NIIT ADMIN DASHBOARD</h2>
+                </div>
+
+                <div class="logo">
+                    <i class="fa fa-expand"></i>
+                    <i class="fa fa-bell"></i>
+                    <div class="image">
+                        <img src="imgs/flag.png" class="flag">
+                        <img src="imgs/avatar2.png" class="avatar2">
+                        <h4>Admin Doe</h4>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="right_body">
+                <div class="faculty">
+                    <div class="faculty_left">
+                        <div class="adding add_block">
+                            <a href="#">Add New Faculty</a>
+                            <div class="hero-input">
+                                <input type="search" placeholder="Search Faculty Details...">
+                                <button class="btm"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+        
+                        <div class="form_body">
+                            <form action="">
+                                <div class="input-box">
+                                    <span>First Name</span>
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                                <div class="input-box">
+                                    <span>Last Name</span>
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                                <div class="input-box">
+                                    <span>Course</span>
+                                    <input type="text" placeholder="Course">
+                                </div>
+                                <div class="butt">
+                                    <button>Add</button>
+                                </div>
+                            </form>
+                        </div>
+        
+                        <div class="adding Details">
+                            <a href="#">Faculty Details</a>
+                            <div class="sort-side">
+                                <p>Sort<i class="fa fa-sort-amount-down"></i></p>
+                                
+                                <p>Filter<i class="fa fa-filter"></i></p>
+                            </div>
+                        </div>
+        
+                        <div class="Std_details">
+                            <table width="100%">
+                                <thead>
+                                    <tr>
+                                        <td>Full Name</td>
+                                        <td>Id No.</td>
+                                        <td>Department</td>
+                                        <td>Age</td>
+                                        <td>Gender</td>
+                                        <td>Email</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><p><img src="imgs/profile.png" alt="">Fred Hebrew</p></td>
+                                        <td>PYHS0011</td>
+                                        <td>Science 4</td>
+                                        <td>24</td>
+                                        <td>Male</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/user-1.png" alt="">Ade Junior</p></td>
+                                        <td>PYH4547</td>
+                                        <td>Science 4</td>
+                                        <td>37</td>
+                                        <td>Male</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/status-4.png" alt="">Helen Famous</p></td>
+                                        <td>DTP4409</td>
+                                        <td>Science 4</td>
+                                        <td>20</td>
+                                        <td>Female</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/user-3.png" alt="">Fejiro John</p></td>
+                                        <td>FNDT3459</td>
+                                        <td>Science 4</td>
+                                        <td>30</td>
+                                        <td>Female</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/user-5.png" alt="">Charles Maduka</p></td>
+                                        <td>WEBP8967</td>
+                                        <td>Science 4</td>
+                                        <td>40</td>
+                                        <td>Male</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/review_3.png">Blessing Oghenetejiri Okoro</p></td>
+                                        <td>DBPG1147</td>
+                                        <td>Science 4</td>
+                                        <td>20</td>
+                                        <td>Female</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/profile.png" alt="">Fred Hebrew</p></td>
+                                        <td>PYHS0011</td>
+                                        <td>Science 4</td>
+                                        <td>24</td>
+                                        <td>Male</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/user-1.png" alt="">Ade Junior</p></td>
+                                        <td>PYH4547</td>
+                                        <td>Science 4</td>
+                                        <td>37</td>
+                                        <td>Male</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/status-4.png" alt="">Helen Famous</p></td>
+                                        <td>DTP4409</td>
+                                        <td>Science 4</td>
+                                        <td>20</td>
+                                        <td>Female</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/user-3.png" alt="">Fejiro John</p></td>
+                                        <td>FNDT3459</td>
+                                        <td>Science 4</td>
+                                        <td>30</td>
+                                        <td>Female</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/user-5.png" alt="">Charles Maduka</p></td>
+                                        <td>WEBP8967</td>
+                                        <td>Science 4</td>
+                                        <td>40</td>
+                                        <td>Male</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><p><img src="imgs/review_3.png">Blessing Okoro</p></td>
+                                        <td>DBPG1147</td>
+                                        <td>Science 4</td>
+                                        <td>20</td>
+                                        <td>Female</td>
+                                        <td>Contact@mail.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="butt">
+                                <button class="btn">Delete</button>
+                                <button>Update</button>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="faculty_right">
+                        <div class="admin">
+                            <span>PYHS0011</span>
+                            <div class="fac_image">
+                                <img src="imgs/profile.png">
+                                <h2>Fred Hebrew</h2>
+                                <p>Python Teacher</p>
+                                <div class="fac-icon">
+                                    <i class="fa fa-comment-dots"></i>
+                                    <i class="fa fa-phone"></i>
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="fac-about">
+                                <h2>About</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit impedit fugiat illum natus expedita aut eligendi doloribus provident, magnam molestias laborum recusandae ex magni alias optio in ea. Deserunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <footer>
+                <p>Creating website becomes easy with HTML & CSS <i class="fas fa-heart"></i></p>
+                <span>© 2023. All right reserved | LegitBoss Muffy</span>
+            </footer>
+        </div>
+    </aside>
+    
+
+    <script src="dash.js"></script>
+</body>
+</html>
